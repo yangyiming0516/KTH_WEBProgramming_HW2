@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+  <User>
+    <Username>abc</Username>
+    <Password>123</Password>
+    <Session>NULL</Session>
+  </User>
+  <User>
+    <Username>123</Username>
+    <Password>abc</Password>
+    <Session>java.security.SecureRandom@58823448</Session>
+  </User>
+  <User>
+    <Username>yimingy</Username>
+    <Password>123456</Password>
+    <Session>java.security.SecureRandom@615bd83f</Session>
+  </User>
+  <User>
+    <Username>harry</Username>
+    <Password>potter</Password>
+    <Session>java.security.SecureRandom@42895574</Session>
+  </User>
+</Users>

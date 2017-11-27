@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="ticket.hw/Query" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="ticket.hw/Query">
+
+<xs:element name="JDOMException" type="tns:JDOMException"/>
+
+<xs:element name="getData" type="tns:getData"/>
+
+<xs:element name="getDataResponse" type="tns:getDataResponse"/>
+
+<xs:element name="getRoute" type="tns:getRoute"/>
+
+<xs:element name="getRouteResponse" type="tns:getRouteResponse"/>
+
+<xs:complexType name="getRoute">
+<xs:sequence>
+<xs:element name="from" type="xs:string" minOccurs="0"/>
+<xs:element name="to" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRouteResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="JDOMException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getData">
+<xs:sequence>
+<xs:element name="number" type="xs:int"/>
+<xs:element name="first" type="xs:string" minOccurs="0"/>
+<xs:element name="second" type="xs:string" minOccurs="0"/>
+<xs:element name="date" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

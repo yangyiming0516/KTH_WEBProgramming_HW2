@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Records>
+  <Record>
+    <No>Fake001</No>
+    <Price>5000</Price>
+    <Remain-0210>196</Remain-0210>
+    <Remain-0211>199</Remain-0211>
+  </Record>
+  <Record>
+    <No>Fake002</No>
+    <Price>4000</Price>
+    <Remain-0210>150</Remain-0210>
+    <Remain-0211>148</Remain-0211>
+  </Record>
+  <Record>
+    <No>Fake003</No>
+    <Price>500</Price>
+    <Remain-0210>50</Remain-0210>
+    <Remain-0211>48</Remain-0211>
+  </Record>
+  <Record>
+    <No>Fake004</No>
+    <Price>4000</Price>
+    <Remain-0210>50</Remain-0210>
+    <Remain-0211>50</Remain-0211>
+  </Record>
+  <Record>
+    <No>Fake005</No>
+    <Price>6000</Price>
+    <Remain-0210>100</Remain-0210>
+    <Remain-0211>100</Remain-0211>
+  </Record>
+  <Record>
+    <No>Fake006</No>
+    <Price>500</Price>
+    <Remain-0210>97</Remain-0210>
+    <Remain-0211>99</Remain-0211>
+  </Record>
+</Records>

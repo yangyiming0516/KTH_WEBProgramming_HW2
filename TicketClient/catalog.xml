@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/User/User?wsdl" uri="xml-resources/web-service-references/User/wsdl/localhost_8080/User/User.wsdl"/>
+    <system systemId="http://localhost:8080/User/User?xsd=1" uri="xml-resources/web-service-references/User/wsdl/localhost_8080/User/User.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Query/Query?wsdl" uri="xml-resources/web-service-references/Query/wsdl/localhost_8080/Query/Query.wsdl"/>
+    <system systemId="http://localhost:8080/Query/Query?xsd=1" uri="xml-resources/web-service-references/Query/wsdl/localhost_8080/Query/Query.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Query/Booking?wsdl" uri="xml-resources/web-service-references/Booking/wsdl/localhost_8080/Query/Booking.wsdl"/>
+    <system systemId="http://localhost:8080/Query/Booking?xsd=1" uri="xml-resources/web-service-references/Booking/wsdl/localhost_8080/Query/Booking.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/User/UserFromWSDL?wsdl" uri="xml-resources/web-service-references/UserFromWSDL/wsdl/localhost_8080/User/UserFromWSDL.wsdl"/>
+    <system systemId="http://localhost:8080/Booking/BookingFromWSDL?wsdl" uri="xml-resources/web-service-references/BookingFromWSDL/wsdl/localhost_8080/Booking/BookingFromWSDL.wsdl"/>
+</catalog>

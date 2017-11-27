@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="ticket.hw/Booking" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="User" targetNamespace="ticket.hw/Booking">
+  <wsdl:types>
+    <xsd:schema targetNamespace="ticket.hw/Booking">
+      <xsd:element name="issue">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="bookingnumber" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+	 
+      <xsd:element name="issueResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="issueReturn" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+	  
+	  <xsd:element name="booking">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="number" type="xsd:int"/>
+			<xsd:element name="first" type="xsd:string"/>
+			<xsd:element name="second" type="xsd:string"/>
+			<xsd:element name="date" type="xsd:string"/>
+			<xsd:element name="card" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+	 
+      <xsd:element name="bookingResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="bookingReturn" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+	  
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="bookingRequest">
+    <wsdl:part element="tns:booking" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="bookingResponse">
+    <wsdl:part element="tns:bookingResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="issueRequest">
+    <wsdl:part element="tns:issue" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="issueResponse">
+    <wsdl:part element="tns:issueResponse" name="parameters"/>
+  </wsdl:message>
+
+  <wsdl:portType name="Booking">
+    <wsdl:operation name="issue">
+      <wsdl:input message="tns:issueRequest"/>
+      <wsdl:output message="tns:issueResponse"/>
+    </wsdl:operation>
+	<wsdl:operation name="booking">
+      <wsdl:input message="tns:bookingRequest"/>
+      <wsdl:output message="tns:bookingResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  
+  <wsdl:binding name="bind" type="tns:Booking">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="issue">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+	<wsdl:operation name="booking">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Booking">
+    <wsdl:port binding="tns:bind" name="10010">
+      <soap:address location="http://www.example.org/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

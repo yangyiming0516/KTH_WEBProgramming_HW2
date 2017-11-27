@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/User/User?wsdl" uri="src/conf/xml-resources/web-service-references/User/wsdl/localhost_8080/User/User.wsdl"/>
+    <system systemId="http://localhost:8080/User/User?xsd=1" uri="src/conf/xml-resources/web-service-references/User/wsdl/localhost_8080/User/User.xsd_1.xsd"/>
+    <system systemId="file:/C:/Users/YY_More/Desktop/1.wsdl" uri="src/conf/xml-resources/web-services/UserFromWSDL/wsdl/1.wsdl"/>
+    <system systemId="file:/C:/Users/YY_More/Desktop/2.wsdl" uri="src/conf/xml-resources/web-services/BookingFromWSDL/wsdl/2.wsdl"/>
+</catalog>

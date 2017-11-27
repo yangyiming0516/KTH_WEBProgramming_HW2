@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${libs.jaxws21.classpath}"/>
+        </taskdef>
+    </target>
+    <target name="wsimport-client-Query" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/Query"/>
+        <property name="wsdl-Query" location="xml-resources/web-service-references/Query/wsdl/localhost_8080/Query/Query.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Query" destdir="${build.generated.dir}/jax-wsCache/Query" wsdl="${wsdl-Query}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Query/Query?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-Query}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/Query"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/Query">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-Query" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/Query"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/hw/ticket/query"/>
+    </target>
+    <target name="wsimport-client-UserFromWSDL" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/UserFromWSDL"/>
+        <property name="wsdl-UserFromWSDL" location="xml-resources/web-service-references/UserFromWSDL/wsdl/localhost_8080/User/UserFromWSDL.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/UserFromWSDL" destdir="${build.generated.dir}/jax-wsCache/UserFromWSDL" wsdl="${wsdl-UserFromWSDL}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/User/UserFromWSDL?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-UserFromWSDL}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/UserFromWSDL"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/UserFromWSDL">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-UserFromWSDL" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/UserFromWSDL"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/hw/ticket/user"/>
+    </target>
+    <target name="wsimport-client-BookingFromWSDL" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/BookingFromWSDL"/>
+        <property name="wsdl-BookingFromWSDL" location="xml-resources/web-service-references/BookingFromWSDL/wsdl/localhost_8080/Booking/BookingFromWSDL.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/BookingFromWSDL" destdir="${build.generated.dir}/jax-wsCache/BookingFromWSDL" wsdl="${wsdl-BookingFromWSDL}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Booking/BookingFromWSDL?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-BookingFromWSDL}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/BookingFromWSDL"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/BookingFromWSDL">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-BookingFromWSDL" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/BookingFromWSDL"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/hw/ticket/booking"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-Query, wsimport-client-UserFromWSDL, wsimport-client-BookingFromWSDL"/>
+</project>
